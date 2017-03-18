@@ -1,3 +1,8 @@
+document.addEventListner("DOMContentLoaded", function(event) {
+        doAllTheStuff(420);
+});
+
+function doAllTheStuff(paramCauseWhyNot){
 var d = document;
 var can = d.getElementById("gameCanvas");
 var ctx = can.getContext('2d');
@@ -8,4 +13,5 @@ nov.onLoad = function(){
 function render() {
         ctx.drawImage(nov, 0, 0);
         window.requestAnimationFrame(render);
+}
 }
